@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 
@@ -6,7 +8,7 @@ const Register = () => {
     <div className="login">
       <section>
         <form>
-            <input type="text" name="name" placeholder="Enter name" />
+          <input type="text" name="name" placeholder="Enter name" />
           <input type="email" name="email" placeholder="Enter email" />
           <input type="password" name="password" placeholder="Enter password" />
 
@@ -21,9 +23,5 @@ const Register = () => {
   );
 };
 
-export const metadata = {
-  title: "Todos Register",
-  description: "Register page of Todo app",
-};
 
 export default Register;

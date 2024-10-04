@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 
@@ -20,9 +22,6 @@ const Login = () => {
   );
 };
 
-export const metadata = {
-  title: "Todos Login",
-  description: "Login page of Todo app",
-};
+
 
 export default Login;
