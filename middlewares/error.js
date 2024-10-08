@@ -3,10 +3,13 @@ export const errorHandler = (
   statusCode = 500,
   message = "Internal Server Error"
 ) => {
-  return res.status(statusCode).json({
-    success: false,
-    message,
-  });
+  return new Response(
+    JSON.stringify({
+      success: false,
+      message,
+    }),
+    { status: statusCode }
+  );
 };
 
 export const catchAsyncErrors = (passedFunc) => (req, res) => {
